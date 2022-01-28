@@ -1,7 +1,8 @@
 export const text = {
     "task": "Completá los datos para programar entrega",
     "code": "Código de seguimiento*",
-    "name": "Nombre y apellido",
+    "lastname": "Apellido",
+    "name": "Nombre ",
     "email": "Correo electrónico",
     "terms": "Acepta términos y condiciones",
     "newsletter": "Recibir Newsletter sobre: ",
@@ -11,4 +12,7 @@ export const text = {
     "submit": "Enviar",
     "product": "Producto",
     "quantity": "Cantidad",
+    "codeText": "Debe estar compuesto por al menos 6 caracteres",
+    "purchaseText": "Categoría de la compra: ",
+    "reset": "Reset"
 }

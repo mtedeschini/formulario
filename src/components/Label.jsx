@@ -1,7 +1,7 @@
 
-const Label = ({htmlFor, text}) => {
+const Label = ({ htmlFor, text, value }) => {
     return (
-        <label htmlFor={htmlFor} >
+        <label value={value} htmlFor={htmlFor} >
             {text}
         </label>
     )

@@ -1,14 +1,15 @@
 import React from "react";
-import Form from "./Form";
+import Forms from "./Forms";
 import NavBar from "./NavBar";
 
 const Home = () => {
     return (
         <>
             <NavBar />
-            <Form />
+            <Forms />
         </>
     )
 }
 
 export default Home;
+

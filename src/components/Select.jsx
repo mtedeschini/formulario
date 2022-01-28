@@ -1,13 +1,39 @@
+import { Field } from "react-final-form";
 
-const Select = ({}) => {
-    return (
-        <select multiple name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
+const Select = ({ }) => {
 
-    )
+    const purchases = [{
+        "type": "tool",
+        "name": "Herramientas",
+    },
+    {
+        "type": "sports",
+        "name": "Deportes"
+    },
+    {
+        "type": "fashion",
+        "name": "Moda"
+    },
+    {
+        "type": "technology",
+        "name": "Tecnología"
+    }
+    ]
+
+    var purchasesList = purchases.map(element => {
+        return (
+            <>
+                <label htmlFor={element.type} className="labelSelect">{element.name}</label>
+                <Field
+                    name="purchases"
+                    id={element.type}
+                    component="input"
+                    type="checkbox"
+                    value={element.type}
+                />{' '}
+            </>
+        )
+    })
+    return purchasesList;
 }
-
 export default Select;

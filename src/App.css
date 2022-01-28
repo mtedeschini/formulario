@@ -24,6 +24,10 @@ code {
   }
 }
 
+.inputForm{
+  height: 77px
+}
+
 .navbar{
   background-color: #FF6C0D;
   height: 75px;
@@ -43,9 +47,9 @@ code {
 .form{
   position: fixed;
   left: 50%;
-  top: 450px;
+  top: 500px;
   transform: translate(-50%, -50%);
-  width: 498px;
+  max-width: 498px;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
   border-radius: 0px 0px 10px 10px;
@@ -108,17 +112,32 @@ label{
   font-size: 14px;
 }
 
+.submit{
+  border: 3px #FF6C0D solid;
+  color: #FF6C0D;
+}
+
+.reset{
+  border: 3px #505050 solid;
+  color: #1b1b1b;
+}
+
 .formFooter button{
+  margin: 0px 10px 0px 10px;
   font-family: inherit;
   background-color: white;
-  border: 3px #FF6C0D solid;
-  width: 200px;
+  width: 180px;
   height: 35px;
-  margin-top: 20px;
-  color: #FF6C0D;
   font-weight: bold;
   font-size: 16px;
   border-radius: 50px;
+  cursor:pointer;
+}
+
+button:disabled{
+  opacity: 40%;
+  cursor:not-allowed;
+
 }
 
 .formAdd button{
@@ -138,4 +157,112 @@ label{
 .addDiv{
   display: inline;
   margin: 0px 10px 0px 10px;
+}
+
+.tooltip {
+  position: absolute;
+  right:25px;
+  top: 145px;
+  display: inline-block;
+  color: #c9c9c9;
+  font-size: 18px;
+}
+
+.tooltip .tooltiptext  {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(119, 119, 119);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-size:12px
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+pre{
+  text-align: left;
+  background-color:lightgray;
+  margin-top: 25px !important;
+  margin: 5px;
+  padding: 4px;
+  border-radius:10px;
+  border: 1px solid grey;
+  font-size: 12px;
+}
+
+.inputSpan{
+  position: relative;
+  right: -168px;
+  top: -28px;
+  font-size:12px;
+  color: red;
+}
+
+.active{
+  font-weight: bold;
+}
+
+input[type="checkbox"]{
+  display: inline-block;
+  width: 10px;
+  margin-right: 20px;
+}
+
+label{
+  font-size: 16px;
+}
+
+
+
+.selectDiv{
+  text-align: left;
+  margin: 20px;
+  padding-left: 10px;
+  padding-bottom: 25px;
+  border-radius:10px;
+  background-color: rgb(235, 235, 235);
+}
+
+
+select{
+  border: none;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .form, .formHeader{
+    max-width: 100%;
+  }
+  input{
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+
+  .inputSpan{
+    right: -145px;
+    top: -26px;
+  }
+  
+
 }
