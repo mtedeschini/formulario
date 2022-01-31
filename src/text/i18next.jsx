@@ -12,7 +12,7 @@ export const text = {
     "submit": "Enviar",
     "product": "Producto",
     "quantity": "Cantidad",
-    "codeText": "Debe estar compuesto por al menos 6 caracteres",
+    "codeText": "Debe estar compuesto por al menos 6 caracteres  ABC123",
     "purchaseText": "Categoría de la compra: ",
     "reset": "Reset"
 }

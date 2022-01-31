@@ -140,6 +140,10 @@ button:disabled{
 
 }
 
+.itemPurchase{
+  display: inline
+}
+
 .formAdd button{
   font-family: inherit;
   background-color: #FF6C0D;
@@ -211,11 +215,24 @@ pre{
 }
 
 .inputSpan{
-  position: relative;
+/*   position: relative;
   right: -168px;
-  top: -28px;
-  font-size:12px;
+  top: -28px; */
+  font-size:13px;
+
+}
+
+.errType{
+  text-align: left !important;
+  padding-left: 23px;
   color: red;
+}
+
+.validating{
+  font-size:13px;
+  text-align: left !important;
+  padding-left: 23px;
+  color: #e2a600 !important
 }
 
 .active{

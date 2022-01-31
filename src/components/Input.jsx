@@ -3,7 +3,7 @@ import Tooltip from "./Tooltip";
 import { Field } from "react-final-form";
 import Error from "./Error";
 
-const Input = ({ placeholder, name, type, label, value, style }) => {
+const Input = ({ placeholder, name, type, label, value, style, validate }) => {
 
     const InputContent = ({ input, meta }) => (
         <div className={meta.active ? "active" : ""}>
@@ -18,8 +18,8 @@ const Input = ({ placeholder, name, type, label, value, style }) => {
             <Field
                 value={value}
                 name={name}
-                component="input"
                 type={type}
+                validate={validate}
             >
                 {InputContent}
             </Field>
